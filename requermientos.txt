@@ -1,0 +1,6 @@
+1. Se utilizo la libreria os para poder leer los archivos escaneados.
+2. Se utilizo la libreria tkinter para hacer la visualización del contenido 
+3. Se utilizo la libreria filedialog para hacer que regresen los archivos que se encontraron en la carpeta seleccionada 
+4. Se utilizo la libreria messagebox para enviar un mensaje cuando tengamos un error o no tengamos la información.
+5. Se utilizo PIL como modulo para poder leer las imagenes que eran los archivos que estan en la carpeta de busqueda
+6. Se utilizo ImageTk para procesar las imagenes y poder modificarlas. 

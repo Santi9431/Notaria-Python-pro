@@ -1,0 +1,38 @@
+El nombre del proyecto. " Escaneo Notaria "
+
+Objetivo :
+
+El objetivo del proyecto. es poder escanear unos registros de una notaria. los cuales. no tiene ningun tipo de regustro en un sistema
+la idea es recopilar la informacion, escanear los documentos y poder buscarlos si se llegan a necesitar. todo esto es
+posible sin necesidad de una base de datos. se puede hacer directamente desde una carpeta. 
+
+1. Funciones y Métodos: 
+
+seleccionar_carpeta(): Abre un cuadro de diálogo para que el usuario seleccione una carpeta y actualiza el combobox con la carpeta seleccionada.
+actualizar_lista_archivos(): Actualiza la lista de archivos mostrando solo los archivos que coinciden con el texto de búsqueda.
+obtener_archivos_recursivamente(): Recorre recursivamente la carpeta seleccionada para encontrar todos los archivos de imagen (.jpg, .jpeg, .png, .gif).
+es_imagen(): Verifica si un archivo dado es una imagen según su extensión.
+mostrar_imagen(): Carga y muestra la imagen seleccionada en el panel de imagen.
+mostrar_todos(): Muestra todos los archivos encontrados en la carpeta seleccionada.
+mostrar_boton_todos(): Muestra dinámicamente el botón "Mostrar Todos" cuando sea necesario.
+imagen_actual_to_pillow(): Convierte la imagen mostrada en la interfaz de tkinter a un formato compatible con Pillow para su procesamiento posterior.
+descargar_imagen(): Permite al usuario guardar la imagen seleccionada en su computadora en formato PNG.
+
+2. Interfaz Gráfica (tkinter):
+
+Combobox: Permite al usuario seleccionar una carpeta.
+Barra de Búsqueda: Facilita la búsqueda de archivos por nombre dentro de la carpeta seleccionada.
+Lista de Archivos (Listbox): Muestra los nombres de los archivos encontrados que coinciden con la búsqueda.
+Panel de Imagen (Label): Muestra la imagen seleccionada de la lista.
+Botones:
+"Mostrar Todos": Actualiza la lista de archivos mostrando todos los archivos encontrados en la carpeta.
+"Descargar": Permite al usuario guardar la imagen seleccionada en su computadora.
+
+3. Flujo de la Aplicación:
+
+El usuario abre la aplicación y selecciona una carpeta usando el menú "Seleccionar Carpeta".
+Puede buscar archivos específicos dentro de la carpeta utilizando la barra de búsqueda.
+Los archivos encontrados se muestran en la lista de archivos.
+Al hacer clic en un archivo de la lista, se muestra su imagen correspondiente en el panel de imagen.
+El usuario puede descargar la imagen mostrada haciendo clic en el botón "Descargar".
+ 
